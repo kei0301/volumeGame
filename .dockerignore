@@ -1,0 +1,5 @@
+node_modules
+packages/contract/node_modules
+packages/frontend/node_modules
+packages/backend/node_modules
+packages/shared/node_modules

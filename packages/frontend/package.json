@@ -1,0 +1,72 @@
+{
+  "name": "@pricegame/frontend",
+  "version": "1.0.0",
+  "author": "Matt Rybin <workmateuszrybin@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "connection": "ts-node -O '{\"module\": \"commonjs\"}' ./scripts/check-wss-connection.ts",
+    "build": "SKIP_PREFLIGHT_CHECK=true REACT_APP_BACKEND_URL=$BACKEND_URL craco build",
+    "start": "REACT_APP_BACKEND_URL=$BACKEND_URL SKIP_PREFLIGHT_CHECK=true craco start",
+    "clean": "echo '@pricegame/frontend' && rm -rf public/node_modules && rm -rf public/script.js && rm -rf public/script.js.map && rm -rf node_modules"
+  },
+  "dependencies": {
+    "@binance-chain/bsc-connector": "^1.0.0",
+    "@craco/craco": "^6.1.2",
+    "@emotion/react": "^11.1.5",
+    "@emotion/styled": "^11.3.0",
+    "@ethersproject/providers": "^5.3.1",
+    "@ethersproject/units": "^5.3.0",
+    "@pricegame/shared": "*",
+    "@react-hook/window-size": "^3.0.7",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "@xstate/react": "^1.3.2",
+    "animated-number-react": "^0.1.2",
+    "cors": "^2.8.5",
+    "ethers": "^5.1.4",
+    "fontsource-source-code-pro": "^4.0.0",
+    "framer-motion": "^4.1.11",
+    "khroma": "^1.4.1",
+    "luxon": "^1.27.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-hot-toast": "^1.0.2",
+    "react-repeatable": "^2.0.1",
+    "react-scripts": "4.0.3",
+    "remeda": "^0.0.27",
+    "rxjs": "^7.0.0",
+    "rxjs-websockets": "^8.0.1",
+    "socket.io-client": "^4.1.2",
+    "swiper": "^6.7.0",
+    "ts-deepmerge": "^1.0.8",
+    "ts-loader": "^9.2.2",
+    "ts-node": "^10.0.0",
+    "web3": "^1.3.5",
+    "websocket": "^1.0.34",
+    "xstate": "^4.18.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "typescript": "^4.2.4"
+  },
+  "resolutions": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "@emotion/react": "11.1.5",
+    "@emotion/styled": "11.3.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

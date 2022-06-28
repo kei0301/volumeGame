@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+      "target": "es2017",
+      "module": "CommonJS",
+      "typeRoots": [
+        "./@types",
+        "node_modules/@types"
+      ],
+      "lib": [
+        "ESNext",
+        "DOM"
+      ],
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "baseUrl": "./",
+      "jsx": "react",
+      "experimentalDecorators": true,
+      "resolveJsonModule": true
+    },
+    "include": ["packages", "scripts"],
+    "exclude": [
+      "node_modules",
+      "**/node_modules/*",
+      "builds",
+      ".yarn"
+    ]
+  }

@@ -1,0 +1,4 @@
+{
+	"ignore": ["typechain", "node_modules", "cache", "artifacts"],
+	"exec": "yarn start"
+     }

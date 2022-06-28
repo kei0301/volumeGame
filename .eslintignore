@@ -1,0 +1,7 @@
+**/*.d.ts
+.eslintrc.js
+tsconfig.json
+scripts/build.js
+packages/**/dist
+packages/**/public
+node_modules

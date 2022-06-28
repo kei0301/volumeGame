@@ -1,0 +1,20 @@
+{
+  "name": "@pricegame/shared",
+  "version": "1.0.0",
+  "author": "Matt Rybin <workmateuszrybin@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "source": "src/index.ts",
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "scripts": {
+    "clean": "echo '@pricegame/shared' &&  rm -rf node_modules"
+  },
+  "dependencies": {
+    "khroma": "^1.4.1",
+    "xstate": "^4.18.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}
